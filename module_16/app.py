@@ -10,7 +10,9 @@ def main():
        st.write("You're seeing this message because you checked the checkbox")
    if st.button("Click me"):
        st.write("Button Clicked!")
-
-
+   message = st.text_area("Enter a message")
+   st.write(f"You message: {message}")
+   choice = st.radio("Pick one", ["Choice 1", "Choice 2", "Choice 3"])
+   st.write(f" You chose: {choice}")
 if __name__ == "__main__":
     main()
