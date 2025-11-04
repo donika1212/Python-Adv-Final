@@ -14,5 +14,12 @@ def main():
    st.write(f"You message: {message}")
    choice = st.radio("Pick one", ["Choice 1", "Choice 2", "Choice 3"])
    st.write(f" You chose: {choice}")
+   if st.button("Success"):
+       st.success("Operation was successful")
+   try:
+       1/0
+   except Exception as e:
+       st.exception(e)
+
 if __name__ == "__main__":
     main()
